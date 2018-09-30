@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Downloader"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        Loaded="Window_Loaded">
+        Loaded="Window_Loaded"
+        Unloaded="Window_Unloaded">
     <Grid>
         <Button x:Name="DownloadButton" 
                 Content="Download" 
@@ -56,11 +57,13 @@
                      Height="27" 
                      Margin="223,266,0,0" 
                      VerticalAlignment="Top" 
-                     Width="352"/>
+                     Width="352"
+                     Visibility="Hidden"/>
         <Label x:Name="DownloadLabel"
                HorizontalAlignment="Left" 
                Margin="223,267,0,0" 
                VerticalAlignment="Top" 
-               Width="352"/>
+               Width="352"
+               Visibility="Hidden"/>
     </Grid>
 </Window>
